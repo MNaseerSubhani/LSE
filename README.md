@@ -11,6 +11,8 @@ a. Datasets:
  - Download [SYNTHIA-RAND-CITYSCAPES](http://synthia-dataset.net/download/808/). Make sure to change class id similar to cityscapes.
  - put all data to "dataset/" folder.
  
-b. 
+b. Pretrained Initial Models:
+ - GTA5
+ -- VGG16-FCN8 
  
    
