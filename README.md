@@ -17,12 +17,14 @@ b. Pretrained Initial Source Models:
  
  - Download all pretrained model and put in "init_models/"
  
-c. Run pip3 install -r requirements.txt
 
 
 
 
-chnage root_base directory 
+### Implementation 
+a. Run pip3 install -r requirements.txt
+b. Change root directory in LSE.py.
+
  
  
    
