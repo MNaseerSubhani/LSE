@@ -14,8 +14,7 @@ a. Datasets:
 b. Pretrained Initial Source Models:
  - [GTA5_VGG16-FCN8 Init](https://drive.google.com/file/d/1OyUFtf5JHOxwYwU7vprp_GzvLDiEZ1-k/view?usp=sharing).
  - [SYNTHIA_VGG16-FCN8 Init](https://drive.google.com/file/d/1ARcOirzLeC3hWlFejzKECzAd1GNp-jnS/view?usp=sharing).
- - [GTA5_DeepLab-ResNet101 Init](https://drive.google.com/file/d/1pbuQi2PyE3oVVhsgbNOtabHE3QFzSkmL/view?usp=sharing).
- - [SYNTHIA_DeepLab-ResNet101 Init](https://drive.google.com/file/d/1xk3C42XAt7LZuZ6kQNgnTrDeuv9QeW2A/view?usp=sharing).
+ 
  - Download all pretrained model and put in "init_models/"
  
 c. Run pip3 install -r requirements.txt
