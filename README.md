@@ -32,9 +32,13 @@ c. Training:
  - SYNTHIA2City with Focal Loss:
  - SYNTHIA2City with Focal Loss:
  
-
 d. Evaluation:
+ 
+
+
  - 
+ 
+Contact: msee16021@itu.edu.pk
 
  
  
