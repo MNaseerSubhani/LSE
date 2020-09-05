@@ -41,10 +41,13 @@ a. Run pip3 install -r requirements.txt.
 b. Change root directory in LSE.py.
 
 c. Training:
- - GTA2Cityscapes without Focal Loss:
- - GTA2Cityscapes with Focal Loss:
- - SYNTHIA2City with Focal Loss:
- - SYNTHIA2City with Focal Loss:
+ - GTA_to_Cityscapes without Focal Loss:
+   ~~~~
+   python3.5 LSE.py --model VGG --source gta5 --gamma 3 --beta 0.1 --focal-loss True --batch-size 1
+   ~~~~
+ - GTA_to_Cityscapes with Focal Loss:
+ - SYNTHIA_to_Cityscapeswith Focal Loss:
+ - SYNTHIA_to_Cityscapeswith with Focal Loss:
  
 d. Evaluation:
  
