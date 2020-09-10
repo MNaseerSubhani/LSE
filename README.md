@@ -79,7 +79,8 @@ d. Evaluation:
 
 
 ### Adapted Models
-
+- [GTA_to_Cityscapes (VGG)](https://drive.google.com/file/d/1OyUFtf5JHOxwYwU7vprp_GzvLDiEZ1-k/view?usp=sharing).
+- [SYNTHIA_to_Cityscapes (VGG)](https://drive.google.com/file/d/1OyUFtf5JHOxwYwU7vprp_GzvLDiEZ1-k/view?usp=sharing).
 
 
  - 
