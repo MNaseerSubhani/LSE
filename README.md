@@ -46,14 +46,26 @@ b. Change root directory in from utlis __init__.py.
 c. Training:
  - GTA_to_Cityscapes without Focal Loss:
    ~~~~
-   python3.5 LSE.py --model VGG --source gta5 --gamma 3 --beta 0.1 --focal-loss True --batch-size 1
+   python3.5 LSE.py --model VGG --source gta5 --gamma 3 --beta 0.1 --focal-loss False --batch-size 1
    ~~~~
  - GTA_to_Cityscapes with Focal Loss:
- - SYNTHIA_to_Cityscapeswith Focal Loss:
- - SYNTHIA_to_Cityscapeswith with Focal Loss:
+   ~~~~
+   python3.5 LSE.py --model VGG --source gta5 --gamma 3 --beta 0.1 --focal-loss True --batch-size 1
+   ~~~~
+ - SYNTHIA_to_Cityscapes without Focal Loss:
+   ~~~~
+   python3.5 LSE.py --model VGG --source synthia --gamma 3 --beta 0.1 --focal-loss False --batch-size 1
+   ~~~~
+ - SYNTHIA_to_Cityscapes with Focal Loss:
+   ~~~~
+   python3.5 LSE.py --model VGG --source synthia --gamma 3 --beta 0.1 --focal-loss True --batch-size 1
+   ~~~~
  
 d. Evaluation:
- 
+   ~~~~
+   python3.5 eval.py model-name gta5_to_Cityscape
+   ~~~~
+   
 
 ### Results:
 ### Adapted Models
