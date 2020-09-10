@@ -8,7 +8,7 @@ M.Naseer Subhani and Mohsen Ali
 0. [Requirements](#requirements)
 0. [Setup](#setup)
 0. [Implementation](#implementation)
-0. [Adapted Models](#adaptedmodels)
+0. [Adapted Models](#adapted_models)
 0. [Note](#note)
 
 
