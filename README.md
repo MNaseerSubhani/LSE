@@ -37,7 +37,7 @@ The root directorty supposed to be "LSE/".
 a. Datasets:
  - Download [GTA5](https://download.visinf.tu-darmstadt.de/data/from_games/) dataset.
  - Download [Cityscapes](https://www.cityscapes-dataset.com/).
- - Download [SYNTHIA-RAND-CITYSCAPES](http://synthia-dataset.net/download/808/). Make sure to change class id similar to cityscapes. or download from this [Link](https://drive.google.com/file/d/1DAetOHtEmRmY2p0swaON3T_NXhV0Xcmm/view?usp=sharing) 
+ - Download [SYNTHIA-RAND-CITYSCAPES](http://synthia-dataset.net/download/808/). Make sure to change class id similar to cityscapes. or download synthia labels from this [Link](https://drive.google.com/file/d/1DAetOHtEmRmY2p0swaON3T_NXhV0Xcmm/view?usp=sharing) 
  - Put all datasets to "dataset/" folder.
  
 b. Pretrained Initial Source Models:
