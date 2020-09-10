@@ -10,6 +10,7 @@ M.Naseer Subhani and Mohsen Ali
 0. [Implementation](#implementation)
 0. [Adapted Models](#adapted-models)
 0. [Note](#note)
+0. [Contact](#contact)
 
 
 
@@ -84,7 +85,9 @@ d. Evaluation:
 
  ### Note
  Increase the batch size as per your hardware requirements. Running algorithm with differnt initial conditions and parameters can vary the results.
-Contact: msee16021@itu.edu.pk
+ 
+### Contact
+M.Naseer Subhani : msee16021@itu.edu.pk
 
  
  
