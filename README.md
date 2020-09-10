@@ -82,9 +82,8 @@ d. Evaluation:
 - [GTA_to_Cityscapes (VGG)](https://drive.google.com/file/d/1OyUFtf5JHOxwYwU7vprp_GzvLDiEZ1-k/view?usp=sharing).
 - [SYNTHIA_to_Cityscapes (VGG)](https://drive.google.com/file/d/1OyUFtf5JHOxwYwU7vprp_GzvLDiEZ1-k/view?usp=sharing).
 
-
- - 
  ### Note
+ Increase the batch size as per your hardware requirements. Running algorithm with differnt initial conditions and parameters can vary the results.
 Contact: msee16021@itu.edu.pk
 
  
