@@ -3,9 +3,8 @@ M.Naseer Subhani and Mohsen Ali
 
 
 
-### ToC
+### Contents
 0. [Introduction](#introduction)
-0. [Citation and license](#citation)
 0. [Requirements](#requirements)
 0. [Setup](#models)
 0. [Usage](#usage)
@@ -15,7 +14,20 @@ M.Naseer Subhani and Mohsen Ali
 
 
 ### Introduction
-### Citation
+This repo contains implementation of paper titled ["Learning from Scale-Invariant Examples for Domain Adaptation in Semantic Segmentation"](https://arxiv.org/pdf/2007.14449.pdf)
+introduced in ECCV2020  
+
+If you use this code in your research, please cite us.
+~~~~
+@article{subhani2020learning,
+  title={Learning from Scale-Invariant Examples for Domain Adaptation in Semantic Segmentation},
+  author={Subhani, M Naseer and Ali, Mohsen},
+  journal={arXiv preprint arXiv:2007.14449},
+  year={2020}
+}
+~~~~
+
+
 
 ### Requirements:
 
