@@ -37,6 +37,9 @@ class GTA5DataSet(data.Dataset):
         image = image.resize(self.crop_size, Image.BICUBIC)
         label = label.resize(self.crop_size, Image.NEAREST)
 
+        rl_image = np.asarray(image, np.float32)
+        rl_image_rgb = rl_image.copy()
+
         image = np.asarray(image, np.float32)
         label = np.asarray(label, np.float32)
         label_copy = self.ignore_label * np.ones(label.shape, dtype=np.float32)
@@ -47,5 +50,5 @@ class GTA5DataSet(data.Dataset):
         image -= self.mean
         image = image.transpose((2, 0, 1))
 
-        return image.copy(), label_copy.copy(), np.array(size), name
+        return image.copy(), label_copy.copy(), np.array(size), name, rl_image_rgb
 

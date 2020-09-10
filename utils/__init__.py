@@ -1,0 +1,1 @@
+root_base = "/add root directory"   #root directory path

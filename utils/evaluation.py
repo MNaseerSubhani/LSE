@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 from torch.autograd import Variable
-from options.test_options import TestOptions
 from data import CreateTrgDataLoader
 from PIL import Image
 import json
@@ -10,9 +9,26 @@ import os
 import numpy as np
 from model import CreateModel
 import tqdm
+from utils import root_base
+import argparse
 
-result_store ='/home/olektra_gpu/Desktop/olektra projects/ECCV/snapshots/'
 
+result_store =root_base+'/snapshots/'
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="adaptive segmentation netowork")
+    parser.add_argument("--model", type=str, default='VGG',help="available options : DeepLab and VGG")
+    parser.add_argument("--data-dir-target", type=str, default=root_base + '/dataset/cityscapes', help="Path to the directory containing the source dataset.")
+    parser.add_argument("--data-list-target", type=str, default=root_base +'/dataset/cityscapes_list/val.txt', help="Path to the file listing the images in the source dataset.")
+    parser.add_argument("--data-label-folder-target", type=str, default=None, help="Path to the soft assignments in the target dataset.") 
+    parser.add_argument("--num-classes", type=int, default=19, help="Number of classes for cityscapes.")
+    parser.add_argument("--init-weights", type=str, default=None, help="initial model.")
+    parser.add_argument("--set", type=str, default='val', help="choose adaptation set.")  
+    parser.add_argument("--save", type=str, default=root_base+'/dataset/cityscapes/results', help="Path to save result.")    
+    parser.add_argument('--gt_dir', type=str, default = root_base +'/dataset/cityscapes/gtFine/val', help='directory which stores CityScapes val gt images')
+    parser.add_argument('--devkit_dir', default=root_base+'/dataset/cityscapes_list', help='base directory of cityscapes')         
+    return parser.parse_args()
 
 
 palette = [128, 64, 128, 244, 35, 232, 70, 70, 70, 102, 102, 156, 190, 153, 153, 153, 153, 153, 250, 170, 30,
@@ -105,8 +121,8 @@ def compute_mIoU(gt_dir, pred_dir, devkit_dir='', restore_from=''):
     
 def main(model):
     testing_entropy = 0
-    opt = TestOptions()
-    args = opt.initialize()    
+   
+    args = parse_args()    
     
     if not os.path.exists(args.save):
         os.makedirs(args.save)
@@ -134,7 +150,7 @@ def main(model):
         output_nomask.save('%s/%s' % (args.save, name))
         output_col.save('%s/%s_color.png' % (args.save, name.split('.')[0])) 
         
-    mIou_ = compute_mIoU(args.gt_dir, args.save, args.devkit_dir, args.restore_from)    
+    mIou_ = compute_mIoU(args.gt_dir, args.save, args.devkit_dir, '')    
 
     return testing_entropy, mIou_
     

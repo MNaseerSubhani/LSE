@@ -119,11 +119,11 @@ class Classifier_Module(nn.Module):
             return out
 
 
-class ResNet50(nn.Module):
+class ResNet101(nn.Module):
     def __init__(self, block, layers, num_classes, phase):
         self.inplanes = 64
         self.phase = phase
-        super(ResNet50, self).__init__()
+        super(ResNet101, self).__init__()
         self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3,
                                bias=False)
         self.bn1 = nn.BatchNorm2d(64, affine=affine_par)
@@ -242,7 +242,7 @@ class ResNet50(nn.Module):
 
 
 def Deeplab(num_classes=21, init_weights=None, restore_from=None, phase='train'):
-    model = ResNet50(Bottleneck, [3, 4, 23, 3], num_classes, phase)   #23, 36 
+    model = ResNet101(Bottleneck, [3, 4, 23, 3], num_classes, phase)   #23, 36 
     if init_weights is not None:
         saved_state_dict = torch.load(init_weights, map_location=lambda storage, loc: storage)
         new_params = model.state_dict().copy()
