@@ -50,7 +50,7 @@ b. Pretrained Initial Source Models:
 ### Implementation 
 a. Run pip3 install -r requirements.txt.
 
-b. Change root directory in from utlis __init__.py.
+b. Change root directory in init.py in utils.
 
 c. Training:
  - GTA_to_Cityscapes without Focal Loss:
