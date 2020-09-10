@@ -7,7 +7,7 @@ M.Naseer Subhani and Mohsen Ali
 0. [Introduction](#introduction)
 0. [Requirements](#requirements)
 0. [Setup](#setup)
-0. [Usage](#usage)
+0. [Implementation](#implementation)
 0. [Note](#note)
 
 
