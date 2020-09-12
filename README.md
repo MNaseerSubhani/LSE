@@ -74,7 +74,7 @@ c. Training:
  
 d. Evaluation:
    ~~~~
-   python3.5 eval.py --model VGG --model-name gta5_to_Cityscape.pth
+   python3.5 eval.py --model VGG --model-name #model file name in .pth from snapshot folder#
    ~~~~
    
 
