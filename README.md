@@ -33,7 +33,7 @@ If you use this code in your research, please cite us.
 - Python 3.5
 
 ### Setup
-The root directorty supposed to be "LSE/".
+The root directory supposed to be "LSE/".
 
 a. Datasets:
  - Download [GTA5](https://download.visinf.tu-darmstadt.de/data/from_games/) dataset.
