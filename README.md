@@ -30,7 +30,7 @@ If you use this code in your research, please cite us.
 
 ### Requirements:
 - Ubuntu 16.04 with NVIDIA Tesla K80 GPU.
-- PyTorch 1.4.0
+- PyTorch 1.0.0
 - Python 3.5
 
 ### Setup
@@ -74,7 +74,7 @@ c. Training:
  
 d. Evaluation:
    ~~~~
-   python3.5 eval.py model-name gta5_to_Cityscape
+   python3.5 eval.py --model VGG --model-name gta5_to_Cityscape.pth
    ~~~~
    
 
