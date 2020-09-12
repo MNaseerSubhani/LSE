@@ -8,7 +8,6 @@ M.Naseer Subhani and Mohsen Ali
 0. [Requirements](#requirements)
 0. [Setup](#setup)
 0. [Implementation](#implementation)
-0. [Adapted Models](#adapted-models)
 0. [Note](#note)
 0. [Contact](#contact)
 
@@ -52,7 +51,7 @@ b. Pretrained Initial Source Models:
 ### Implementation 
 a. Run pip3 install -r requirements.txt.
 
-b. Change root directory in init.py in utils.
+b. Change root directory in init.py from utils folder.
 
 c. Training:
  - GTA_to_Cityscapes without Focal Loss:
@@ -78,10 +77,6 @@ d. Evaluation:
    ~~~~
    
 
-
-### Adapted Models
-- [GTA_to_Cityscapes (VGG)](https://drive.google.com/file/d/1OyUFtf5JHOxwYwU7vprp_GzvLDiEZ1-k/view?usp=sharing).
-- [SYNTHIA_to_Cityscapes (VGG)](https://drive.google.com/file/d/1OyUFtf5JHOxwYwU7vprp_GzvLDiEZ1-k/view?usp=sharing).
 
  ### Note
  Increase the batch size as per your hardware requirements. Running algorithm with different initial conditions and parameters can vary the results.
