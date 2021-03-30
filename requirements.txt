@@ -120,7 +120,7 @@ pycocotools==2.0.0
 pydicom==1.4.2
 pydot==1.4.1
 pygame==1.9.6
-Pygments==2.6.1
+Pygments==2.7.4
 pygobject==3.20.0
 pyparsing==2.4.7
 pyproj==2.5.0
